@@ -51,7 +51,7 @@ def play_music(fpath: str):
 
 
 def execute_command(command: List[str]):
-    process = subprocess.run(command, capture_output=True)
+    process = subprocess.run(command, stdout=subprocess.PIPE)
 
     try:
         process.check_returncode()
@@ -173,8 +173,6 @@ def main():
 
         if args.notification == "music":
             play_music(os.path.join(file_dir, "source/error.mp3"))
-
-        raise e
     finally:
         gpu_info = ", ".join(
             [f"{gpu}: {num}" for gpu, num in requested_gpu_records.items()]
