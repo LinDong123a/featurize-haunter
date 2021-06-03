@@ -173,6 +173,8 @@ def main():
 
         if args.notification == "music":
             play_music(os.path.join(file_dir, "source/error.mp3"))
+
+        raise e
     finally:
         gpu_info = ", ".join(
             [f"{gpu}: {num}" for gpu, num in requested_gpu_records.items()]
