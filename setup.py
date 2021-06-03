@@ -27,7 +27,7 @@ setuptools.setup(
     },
     package_dir={"featurize_haunter": "featurize_haunter"},
     include_package_data=True,
-    python_requires='>=3.7',
+    python_requires='>=3.6',
     install_requires=[
         "featurize==0.0.12",
         "playsound==1.2.2",
