@@ -18,7 +18,7 @@ setuptools.setup(
     description="command line tool for init and config",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/LinDong123a/featurize-haunter",
     packages=setuptools.find_packages(),
     entry_points={
         "console_scripts": [
@@ -43,6 +43,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     project_urls={
-        "Source": "",  # noqa
+        "Source": "https://github.com/LinDong123a/featurize-haunter",
     },
 )

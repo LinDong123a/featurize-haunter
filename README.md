@@ -10,7 +10,7 @@
 ## 安装方式
 
 ```shell
-pip install 
+pip install git+https://github.com/LinDong123a/featurize-haunter
 ```
 
 ## 使用说明
@@ -52,5 +52,5 @@ featurize-haunter --token {token} --gpus "GeForce RTX 2080 Ti,GeForce RTX 3090" 
 
 ## TODO
 
-* [] 增加email提醒机制 
-* [] 引入多线程，实现更高效的并发
+* [ ] 增加email提醒机制 
+* [ ] 引入多线程，实现更高效的并发
