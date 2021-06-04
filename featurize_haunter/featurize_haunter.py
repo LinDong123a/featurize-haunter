@@ -99,7 +99,7 @@ class FeaturizeClient(object):
             ) for ins in instance_list
         ]
 
-    def get_all_availabel_machine(self) -> List[Instance]:
+    def get_all_available_machine(self) -> List[Instance]:
         return [ins for ins in self.get_all_machine() if ins.idle()]
 
     def request_instance(self, ins: Instance) -> bool:
@@ -135,7 +135,7 @@ def main():
     try:
         requested_gpu_records = defaultdict(int)
         while left_num:
-            available_ins_list = client.get_all_availabel_machine()
+            available_ins_list = client.get_all_available_machine()
             sorted_avai_ins_list = sorted(
                 available_ins_list,
                 key=lambda x: gpu_prio_dict.get(x.gpu, 1e5),
